@@ -11,6 +11,20 @@ export function cartState(isLoading = false, isLoaded=false, isFailed=false, car
     }
 }
 
+export function setShowItemDetails(show = false) {
+    return {
+        type: 'STATE_CART_DETAILS',
+        showItemDetails:show
+    }
+}
+
+export function setShowPromoDetails(show = false) {
+    return {
+        type: 'STATE_CART_PROMO',
+        showPromo:show
+    }
+}
+
 export function fetchCart() {
     const url = `/cart.json`
     return dispatch => {

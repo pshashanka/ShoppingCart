@@ -7,6 +7,15 @@ export function cartState(state = false, action){
                 isFailed: action.isFailed,
                 cartData: action.cartData,                
             }
+
+        case 'STATE_CART_DETAILS' : 
+              const newState = {...state}
+              newState.showItemDetails = action.showItemDetails 
+             return  newState
+        case 'STATE_CART_PROMO' : 
+             const newState1 = {...state}
+             newState1.showPromoDetails = action.showPromo 
+             return  newState1
         default:
             return state
     }

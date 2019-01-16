@@ -1,5 +1,6 @@
-import SubTotal from "./SubTotal.jsx";
+import CostBreakDown from "./CostBreakDown.jsx";
 import TotalCost from "./TotalCost.jsx";
-import Loader from "./Loader.jsx"
+import Loader from "./Loader.jsx";
+import ItemDetails from "./ItemDetails.jsx";
 
-export { SubTotal, TotalCost, Loader };
+export { CostBreakDown, TotalCost, Loader, ItemDetails };
