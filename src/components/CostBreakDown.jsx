@@ -8,7 +8,7 @@ const CostBreakDown = ({ subtotal, pickupSavings, taxesFees, pickupZip  }) => (
         Subtotal
       </Grid.Column>
       <Grid.Column mobile={8} textAlign="right">
-        <b>{subtotal}</b>
+        <b>${subtotal}</b>
       </Grid.Column>
     </Grid.Row>
     <Grid.Row>
@@ -16,7 +16,7 @@ const CostBreakDown = ({ subtotal, pickupSavings, taxesFees, pickupZip  }) => (
         <Popup trigger={<p className="pLink"><u>Pickup Savings</u></p>} content='Pickup your Order in the store cuts costs and we pass savings to you.' />
       </Grid.Column>
       <Grid.Column mobile={8} textAlign="right" className="redText">
-        <b>-{pickupSavings}</b>
+        <b>-${pickupSavings}</b>
       </Grid.Column>
     </Grid.Row>    
     <Grid.Row>
@@ -26,7 +26,7 @@ const CostBreakDown = ({ subtotal, pickupSavings, taxesFees, pickupZip  }) => (
         </p>
       </Grid.Column>
       <Grid.Column mobile={8} textAlign="right">
-        <b>{taxesFees}</b>
+        <b>${taxesFees}</b>
       </Grid.Column>
     </Grid.Row>      
    </Grid> 

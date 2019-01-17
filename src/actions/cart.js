@@ -25,6 +25,18 @@ export function setShowPromoDetails(show = false) {
     }
 }
 
+export function applyPromoCode(promoCode) {
+    let discount = 0
+    if(promoCode === "DISCOUNT"){
+        discount = (10 / 100)
+    }
+
+    return {
+        type: 'STATE_CART_APPLY_PROMO',
+        discount        
+    }
+}
+
 export function fetchCart() {
     const url = `/cart.json`
     return dispatch => {

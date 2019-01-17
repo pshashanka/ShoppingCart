@@ -14,7 +14,7 @@ const TotalCost = (props) => (
       Est. total
     </Grid.Column>     
     <Grid.Column textAlign="right">
-      {props.total}
+      ${props.totalCost}
     </Grid.Column>       
   </Grid.Row>      
  </Grid> 

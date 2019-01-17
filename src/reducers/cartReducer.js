@@ -16,6 +16,10 @@ export function cartState(state = false, action){
              const newState1 = {...state}
              newState1.showPromoDetails = action.showPromo 
              return  newState1
+        case 'STATE_CART_APPLY_PROMO' :
+            const newState2 = {...state}
+            newState2.discount = action.discount
+            return  newState2          
         default:
             return state
     }

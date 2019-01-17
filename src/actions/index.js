@@ -1,9 +1,10 @@
 
-import {cartState, fetchCart, setShowItemDetails, setShowPromoDetails} from './cart'
+import {cartState, fetchCart, setShowItemDetails, setShowPromoDetails, applyPromoCode} from './cart'
 
 export {
     cartState,
     fetchCart,
     setShowItemDetails,
-    setShowPromoDetails
+    setShowPromoDetails,
+    applyPromoCode
 };
