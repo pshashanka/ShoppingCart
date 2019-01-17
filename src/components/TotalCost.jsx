@@ -12,7 +12,7 @@ const TotalCost = (props) => (
   <Grid.Row columns={2}>
     <Grid.Column textAlign="left">
       <span className="largeBold"> Est. total</span>
-      <p><smaller>{props.discount && "(Discount Applied)"}</smaller></p>
+      <p className="discountLabel">{props.discount && `(${props.discount * 100}% Discount Applied)`}</p>
     </Grid.Column>     
     <Grid.Column textAlign="right">
       <span className="largeBold">${props.totalCost}</span>

@@ -6,7 +6,7 @@ const ItemDetails = ({items}) => (
       {items.map((v, i) => 
         <Grid.Row key={i}>
         <Grid.Column textAlign="left" style={{width: "100%"}}>
-            <img className="itemImage" src={v.image}  />
+            <img className="itemImage" src={v.image} alt="Item image" />
         </Grid.Column>  
         <Grid.Column textAlign="right" style={{width: "100%"}}>
             <div>

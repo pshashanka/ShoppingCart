@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Form, Button } from 'semantic-ui-react'
+import { Form } from 'semantic-ui-react'
+import PropTypes from 'prop-types';
 
 class PromoDetails extends React.Component {
     constructor(){
@@ -20,24 +21,25 @@ class PromoDetails extends React.Component {
     render() {
         const { promoCode } = this.state
         return(
-            <Grid stretched>
             <Form onSubmit={this.handleSubmit}>
-                  <Grid.Row>
-                      <Grid.Column>
-                          <Form.Field>
-                               <br />
-                              <label className={"labelPromoCode"}>Promo Code</label> 
-                              <Form.Input placeholder="promo code" name="promoCode" value={promoCode} onChange={this.handleChange}></Form.Input>
-                          </Form.Field>
-                          <Button type="submit" basic><b>Apply</b></Button> 
-                          <br />
-                      </Grid.Column>
-                  </Grid.Row>
-                  </Form>
-           </Grid> 
+                <Form.Field>
+                    <br />
+                    <label className={"labelPromoCode"}>Promo Code</label> 
+                    <Form.Input action="Apply" placeholder="promo code" name="promoCode" value={promoCode} onChange={this.handleChange}></Form.Input>
+                </Form.Field>
+            </Form>
         )
     }
 
 }
+
+PromoDetails.propTypes = {
+    applyPromoCode: PropTypes.func
+}
+
+PromoDetails.defaultProps = {
+    applyPromoCode: () => {}
+}
+
 
 export default PromoDetails;
