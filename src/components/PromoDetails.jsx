@@ -25,12 +25,12 @@ class PromoDetails extends React.Component {
                   <Grid.Row>
                       <Grid.Column>
                           <Form.Field>
-                              <label>Promo Code</label> 
+                               <br />
+                              <label className={"labelPromoCode"}>Promo Code</label> 
                               <Form.Input placeholder="promo code" name="promoCode" value={promoCode} onChange={this.handleChange}></Form.Input>
                           </Form.Field>
-                      </Grid.Column>
-                      <Grid.Column>
-                          <Button type="submit"> Apply </Button> 
+                          <Button type="submit" basic><b>Apply</b></Button> 
+                          <br />
                       </Grid.Column>
                   </Grid.Row>
                   </Form>

@@ -9,12 +9,13 @@ const TotalCost = (props) => (
       <CostBreakDown {...props} />
     </Grid.Column>  
   </Grid.Row>
-  <Grid.Row columns={2} className="largeBold">
+  <Grid.Row columns={2}>
     <Grid.Column textAlign="left">
-      Est. total
+      <span className="largeBold"> Est. total</span>
+      <p><smaller>{props.discount && "(Discount Applied)"}</smaller></p>
     </Grid.Column>     
     <Grid.Column textAlign="right">
-      ${props.totalCost}
+      <span className="largeBold">${props.totalCost}</span>
     </Grid.Column>       
   </Grid.Row>      
  </Grid> 

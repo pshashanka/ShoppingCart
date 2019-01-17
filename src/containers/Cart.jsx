@@ -66,12 +66,12 @@ class Cart extends Component {
     console.log("items", items)
     return (
       <div>
-        <Grid centered stretched={false} computer={8} mobile={8} tablet={16}>
+        <Grid centered stretched={false} computer={16} mobile={8} tablet={16}>
           <Grid.Row>
             <Grid.Column>
               <Card>
                 <Card.Content>
-                  <TotalCost {...this.props.cartData} totalCost={totalCost} />
+                  <TotalCost {...this.props.cartData} totalCost={totalCost} discount={this.props.discount} />
                 </Card.Content>
                 <Card.Content>
                    <p className="pLink">
